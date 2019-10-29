@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirebaseChat_TypeC</string>
+    <string name="start">Start</string>
+    <string name="display_name">Display Name</string>
+</resources>
