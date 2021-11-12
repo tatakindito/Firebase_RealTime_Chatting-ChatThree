@@ -35,6 +35,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
     private HashMap<String, String> dict3;
     private HashMap<String, String> dict4;
     private HashMap<String, String> dict5;
+    private HashMap<String, String> dict6;
 
     private ArrayList<HashMap<String, String>> arrMap;
 
@@ -72,37 +73,44 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         dict1 = new HashMap<>();
         dict1.put("name", "bill");
         dict1.put("email", "bill@fbase.com");
-        dict1.put("uid", "F20hK8pstXa0J8SYN2olD1KiGr33");
+        dict1.put("uid", "Pb1RuwnOHUS48TwEce0oRl3eccw2");
 
         arrMap.add(0, dict1);
 
         dict2 = new HashMap<>();
         dict2.put("name", "john");
         dict2.put("email", "john@fbase.com");
-        dict2.put("uid", "PGKpfTTVGhTjR0od60mweFKrMlo2");
+        dict2.put("uid", "AL1u83276Aappb8BQEdhlHgVnUb2");
 
         arrMap.add(1, dict2);
 
         dict3 = new HashMap<>();
-        dict3.put("name", "babarian");
+        dict3.put("name", "heri");
         dict3.put("email", "babarian@fbase.com");
-        dict3.put("uid", "SvYUac5a9odkLdNOn1j1FijTyiY2");
+        dict3.put("uid", "FrFUq07lJuOFY9WC3kssawAJZPf1");
 
         arrMap.add(2, dict3);
 
         dict4 = new HashMap<>();
-        dict4.put("name", "lara");
-        dict4.put("email", "lara@fbase.com");
-        dict4.put("uid", "D4l7mSQjhvZgocqV04Mt6chkt193");
+        dict4.put("name", "tyas");
+        dict4.put("email", "tyasdarma19@gmail.com");
+        dict4.put("uid", "jzI5je5a3QfY3dfxhIl3c9NergW2");
 
         arrMap.add(3, dict4);
 
         dict5 = new HashMap<>();
         dict5.put("name", "nilson");
         dict5.put("email", "nilson@fbase.com");
-        dict5.put("uid", "1eeAAgCqnfT44j0jOgGFMjDrKt42");
+        dict5.put("uid", "59Bb43YpEZWhrv2quu52LZKIMIm2");
 
         arrMap.add(4, dict5);
+
+        dict6 = new HashMap<>();
+        dict6.put("name", "tatak");
+        dict6.put("email", "tatakindito80@gmail.com");
+        dict6.put("uid", "o9uVUjIBMZRloE5BO0nYcsDdXBp2");
+
+        arrMap.add(5, dict6);
 
     }
 
@@ -120,9 +128,10 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(StartActivity.this, android.R.layout.select_dialog_singlechoice);
                 arrayAdapter.add("bill");
                 arrayAdapter.add("john");
-                arrayAdapter.add("babarian");
-                arrayAdapter.add("lara");
+                arrayAdapter.add("heri");
+                arrayAdapter.add("tyas");
                 arrayAdapter.add("nilson");
+                arrayAdapter.add("tatak");
 
                 builderSingle.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
@@ -143,7 +152,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
                         disBtn.setText(str);
 
-                        signIn(email, "123456");
+                        signIn(email, "17121004");
 
                     }
                 });
@@ -189,7 +198,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
 
                             // Write a message to the database
-                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            FirebaseDatabase database = FirebaseDatabase.getInstance("https://chatthree-2683a-default-rtdb.firebaseio.com/");
                             DatabaseReference myRef = database.getReference("chat");
 
                             FChat friendlyMessage = new FChat(email, subStringName(email), mAuth.getCurrentUser().getUid());

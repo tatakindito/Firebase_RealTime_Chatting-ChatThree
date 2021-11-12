@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "504849305685",
+    "firebase_url": "https://chatthree-2683a-default-rtdb.firebaseio.com",
+    "project_id": "chatthree-2683a",
+    "storage_bucket": "chatthree-2683a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504849305685:android:6594e6316cb4985ba784dc",
+        "android_client_info": {
+          "package_name": "com.example.firebasechat_typec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504849305685-dh7cvjpjluqnt3pmhu6egiagsgpsemlf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasechat_typec",
+            "certificate_hash": "cf1b0387c878c176558d114f7a0920fb1083b769"
+          }
+        },
+        {
+          "client_id": "504849305685-53uoko4o55c1mh53gujkbqin6u2ah6jl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAip_rmhub4yPqkRszqcAlJV9uz-Ngnlqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504849305685-53uoko4o55c1mh53gujkbqin6u2ah6jl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

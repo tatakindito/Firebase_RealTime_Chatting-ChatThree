@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mFMessages = new ArrayList<FriendlyMessage>();
 
         // Write a message to the database
-        database = FirebaseDatabase.getInstance();
+        database = FirebaseDatabase.getInstance("https://chatthree-2683a-default-rtdb.firebaseio.com/");
         myRef = database.getReference("message");
 
         mHandler = new Handler();
